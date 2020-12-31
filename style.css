@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+html {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    background-color: whitesmoke;
+    font-family: 'Bangers' , sans-serif;
+}
+h1 {text-align: center;font-size: 3em;letter-spacing: 8px;}
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255,255,255,0.8);
+}
+/*
+    here i made it position fixed to cover all the page and over the hight
+    like i'm stretching a paper on a table to paint it
+*/
+/*
+    here i made it fixed to bc i want it to be fixed and to give it dimentions (top , left)
+    and the transform => translate to make the top & left 50% without counting element's width and height
+
+*/
+.loader img{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.imgs-container {
+    margin: 10px 25%;
+}
+.imgs-container img{
+    margin-top: 5px;
+    width: 100%;
+}
+/*
+    // Media Query
+*/
+@media screen and (max-width: 600px){
+    .imgs-container {
+        margin: 10px 5%;
+    }
+}
